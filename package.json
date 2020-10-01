@@ -1,7 +1,7 @@
 {
-  "name": "eth-marketplace",
+  "name": "blockchain-game",
   "version": "0.1.0",
-  "description": "An Ethereum Marketplace",
+  "description": "Blockchain memory game",
   "author": "gregory@dappuniversity.com",
   "dependencies": {
     "@openzeppelin/contracts": "^2.3.0",
