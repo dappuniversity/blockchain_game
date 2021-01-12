@@ -135,7 +135,7 @@ class App extends Component {
     const optionOneId = this.state.cardsChosenId[0]
     const optionTwoId = this.state.cardsChosenId[1]
 
-    if(optionOneId == optionTwoId) {
+    if(optionOneId === optionTwoId) {
       alert('You have clicked the same image!')
     } else if (this.state.cardsChosen[0] === this.state.cardsChosen[1]) {
       alert('You found a match')
@@ -208,6 +208,7 @@ class App extends Component {
                       <img
                         key={key}
                         src={this.chooseImage(key)}
+                        alt={this.chooseImage(key)}
                         data-id={key}
                         onClick={(event) => {
                           let cardId = event.target.getAttribute('data-id')
@@ -232,6 +233,7 @@ class App extends Component {
                       return(
                         <img
                           key={key}
+                          alt={key}
                           src={tokenURI}
                         />
                       )
